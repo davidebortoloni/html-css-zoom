@@ -3,10 +3,76 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
 
+/* Utilities */
 .flex {
     display: flex;
 }
-.container {
-    margin: 0 auto;
+.flex.center {
+    flex-direction: row;
+    justify-content: center;
+}
+.flex.right {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.btn {
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.bg-grey {
+    background-color: gray;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-white {
+    color: white;
+}
+
+/* Stilizzazione header */
+header {
+    height: 50px;
+    padding: 5px;
+}
+
+/* Stilizzazione main */
+#users {
+    height: calc(100vh - 130px);
+    overflow-y: scroll;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+.user {
+    position: relative;
+    margin: 0 2px;
+}
+#users .user-video {
+    /* padding: 5px; */
+}
+.user-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 7px 10px;
+    font-size: 12px;
+}
+.user-name i {
+    margin-right: 3px;
+}
+
+/* Stilizzazione footer */
+footer {
+    height: 80px;
 }
