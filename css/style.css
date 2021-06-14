@@ -20,6 +20,14 @@ body {
     flex-direction: row;
     justify-content: flex-end;
 }
+.flex.space-between {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex.v-align-center {
+    flex-direction: row;
+    align-items: center;
+}
 .btn {
     font-size: 14px;
     display: inline-block;
@@ -28,7 +36,10 @@ body {
     cursor: pointer;
 }
 .bg-grey {
-    background-color: gray;
+    background-color: #4a4a4a;
+}
+.bg-darkgrey {
+    background-color: #222222;
 }
 .text-center {
     text-align: center;
@@ -38,6 +49,12 @@ body {
 }
 .text-white {
     color: white;
+}
+.text-green {
+    color: #4BC800;
+}
+.text-red {
+    color: #F01415;
 }
 
 /* Stilizzazione header */
@@ -75,4 +92,32 @@ header {
 /* Stilizzazione footer */
 footer {
     height: 80px;
+    padding-left: 15px;
+}
+footer .icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+footer .function {
+    margin-right: 20px;
+    cursor: pointer;
+}
+footer .action {
+    margin-right: 15px;
+}
+footer .action-description {
+    font-size: 12px;
+}
+footer .action:hover {
+    opacity: 0.5;
+}
+footer .selection:hover {
+    opacity: 0.5;
+}
+footer .end-meeting {
+    padding: 0 20px;
+    cursor: pointer;
+}
+footer .end-meeting:hover {
+    background-color: white;
 }
