@@ -66,16 +66,13 @@ header {
 /* Stilizzazione main */
 #users {
     height: calc(100vh - 130px);
-    overflow-y: scroll;
+    overflow-y: auto;
     flex-flow: row wrap;
     align-content: flex-start;
 }
 .user {
     position: relative;
     margin: 0 2px;
-}
-#users .user-video {
-    /* padding: 5px; */
 }
 .user-name {
     position: absolute;
